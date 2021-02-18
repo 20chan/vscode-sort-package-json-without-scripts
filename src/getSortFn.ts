@@ -1,12 +1,12 @@
 import path from 'path';
 import readPkgUp from 'read-pkg-up';
 import resolve from 'resolve';
-import sort from 'sort-package-json';
+import sort from 'sort-package-json-without-scripts';
 
 export function getSortFn(pjson: any, fileName: string) {
   const dir = path.dirname(fileName);
   if (hasSortPackageJsonPkg(pjson)) {
-    const modulePath = resolve.sync('sort-package-json', { basedir: dir })
+    const modulePath = resolve.sync('sort-package-json-without-scripts', { basedir: dir })
     return require(modulePath)
   }
 
@@ -18,6 +18,6 @@ export function getSortFn(pjson: any, fileName: string) {
 }
 
 function hasSortPackageJsonPkg(json: any) {
-  return json.dependencies && json.dependencies['sort-package-json'] ||
-    json.devDependencies && json.devDependencies['sort-package-json']
+  return json.dependencies && json.dependencies['sort-package-json-without-scripts'] ||
+    json.devDependencies && json.devDependencies['sort-package-json-without-scripts']
 }

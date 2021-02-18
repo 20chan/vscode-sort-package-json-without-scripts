@@ -1,21 +1,21 @@
 {
-  "name": "vscode-sort-package-json",
+  "name": "vscode-sort-package-json-without-scripts",
   "displayName": "Sort package.json",
   "version": "1.2.2",
   "description": "Sort package.json",
   "categories": [
     "Other"
   ],
-  "homepage": "https://github.com/unional/vscode-sort-package-json#readme",
+  "homepage": "https://github.com/20chan/vscode-sort-package-json-without-scripts#readme",
   "bugs": {
-    "url": "https://github.com/unional/vscode-sort-package-json/issues"
+    "url": "https://github.com/20chan/vscode-sort-package-json-without-scripts/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/unional/vscode-sort-package-json.git"
+    "url": "git+https://github.com/20chan/vscode-sort-package-json-without-scripts.git"
   },
   "license": "MIT",
-  "publisher": "unional",
+  "publisher": "20chan",
   "main": "./out/extension.js",
   "scripts": {
     "compile": "tsc",
@@ -41,7 +41,7 @@
   "dependencies": {
     "read-pkg-up": "^7.0.1",
     "resolve": "^1.15.1",
-    "sort-package-json": "^1.40.0"
+    "sort-package-json-without-scripts": "0.0.0-development"
   },
   "devDependencies": {
     "@types/mocha": "^7.0.1",
