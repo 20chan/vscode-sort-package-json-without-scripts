@@ -1,8 +1,8 @@
 {
   "name": "vscode-sort-package-json-without-scripts",
-  "displayName": "Sort package.json",
-  "version": "1.2.3",
-  "description": "Sort package.json",
+  "displayName": "Sort package.json without scripts",
+  "version": "1.2.4",
+  "description": "Sort package.json without scripts",
   "categories": [
     "Other"
   ],
